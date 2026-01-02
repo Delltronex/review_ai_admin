@@ -224,7 +224,7 @@ function Admin() {
 
   useEffect(() => {
     axios
-      .get("http://127.0.0.1:8000/feedback")
+      .get("https://review-ai-backend-iota.vercel.app/")
       .then((res) => {
         const sorted = [...res.data].sort(
           (a, b) => new Date(b.timestamp) - new Date(a.timestamp)
